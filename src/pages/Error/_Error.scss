@@ -1,0 +1,26 @@
+.error{
+    width: 100%;
+    height: 100%;
+    @include column-center;
+    &_title{
+        font-family: "Monsterrat", sans-serif;
+        font-size: 288px;
+        font-weight: 700;
+        color: $primary-color;
+
+    }
+    &_txt{
+        font-family: "Monsterrat", sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        color: $primary-color;
+    }
+    &_link{
+        font-family: "Monsterrat", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: $primary-color;
+        text-decoration: underline;
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,27 @@
+.nav{
+    
+    width: auto;
+    height: 55px;
+    
+
+
+
+    &_ul{
+        width: 220px;
+        height: 100%;
+        @include flex-row-space-between;
+    }
+
+    &_li{
+        width: auto;
+        height: auto;
+        font-family: "Monsterrat", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: $primary-color;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

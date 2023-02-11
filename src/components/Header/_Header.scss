@@ -1,0 +1,15 @@
+.header{
+    width: auto;
+    height: 55px;
+    margin: 30px 100px 40px 100px;
+    @include flex-row-space-between;
+
+    &_logo{
+        width: auto;
+        height: 100%;
+        &--img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}

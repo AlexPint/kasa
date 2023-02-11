@@ -1,0 +1,24 @@
+
+@import "./base.scss";
+
+@import "./utils/mixins";
+@import "./utils/variables";
+
+
+@import "../pages/Error/Error";
+
+
+@import "../components/Header/Header.scss";
+@import "../components/Nav/Nav";
+@import "../components/Banner/Banner";
+@import "../components/Card/Card.scss";
+@import "../components/AboutBanner/AboutBanner";
+@import "../components/Collapse/Collapse";
+@import "../components/Footer/Footer";
+@import "../components/Carrousel/Carrousel";
+@import "../components/Rate/Rate";
+@import "../components/Host/host";
+@import "../components/Tag/Tag";
+
+
+

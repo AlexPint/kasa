@@ -1,0 +1,16 @@
+.footer{
+    width: 100%;
+    height: 150px;
+    padding: 20px 0px;
+    background-color: black;
+    @include flex-column-space-around;
+    &_logo{
+
+    }
+    &_txt{
+        font-family: "Monsterrat", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: $text-color;
+    }
+}

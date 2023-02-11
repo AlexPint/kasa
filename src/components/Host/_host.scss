@@ -1,0 +1,29 @@
+.host{
+    width: auto;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    &_name{
+        width: auto;
+        height: 100%;
+        margin-right: 10px;
+        padding: 5px 0 5px 0;
+        font-family: "Monsterrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:flex-end; 
+    }
+    &_picture{
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        background-color: #C4C4C4;
+    }
+}

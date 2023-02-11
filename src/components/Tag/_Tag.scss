@@ -1,0 +1,22 @@
+.tag{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    &_box{
+        width: 115px;
+        height: 25px;
+        margin-right: 10px;
+        background-color: $primary-color;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-txt{
+            font-family: "Monsterrat", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: $text-color;
+        }
+    }
+}
