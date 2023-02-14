@@ -4,17 +4,19 @@ import Card from "../../components/Card/Card";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-
-  const [data, setData] =useState([]);
+/*
+  const [data, setData] = useState([]);
     
   useEffect(() => {
-    fetch(`../../data/logements.json`)
-         .then((response) => response.json()
-         .then(({ surveyData }) => console.log(surveyData))
-         .catch((error) => console.log(error))
-     )
- }, [])
+    fetch("/data/logements.json")
+    .then(response => response.json())
+    .then(res => setData(res))
+    .then(data => {console.log(data)})
+    .catch(error => console.error(error));
+  
+  }, []);
 
+*/
   return (
     <div>
       <Banner />
