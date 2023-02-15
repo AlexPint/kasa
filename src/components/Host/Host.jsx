@@ -1,13 +1,12 @@
 import React from 'react';
 
-const Host = () => {
+const Host = (host) => {
     return (
         <div className='host'>
             <div className='host_name'>
-                <p>First Name</p>
-                <p>Last Name</p>
+                <p>{host.name}</p>
             </div>
-            <div className='host_picture'></div>
+            <div className={host.picture}></div>
         </div>
     );
 };
