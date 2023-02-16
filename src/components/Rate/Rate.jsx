@@ -1,16 +1,22 @@
 import React from 'react';
 import Star from"../../assets/star.svg"
-import GStar from"../../assets/grey-star.svg"
+import EmptyStar from"../../assets/grey-star.svg"
 
 
-const Rate = () => {
+const Rate = ({rating}) => {
+    
+    const stars = [1, 2, 3, 4, 5];
+
     return (
         <div className='rate'>
-            <img src={Star} alt="étoile de notation" className='star'/>
-            <img src={Star} alt="étoile de notation" />
-            <img src={Star} alt="étoile de notation" />
-            <img src={GStar} alt="étoile de notation" />
-            <img src={GStar} alt="étoile de notation" />
+            {stars.map((star) => (
+                <img
+                key={star}
+                src={rating >= star ? Star : EmptyStar}
+                alt='étoile de notation'
+                className='star'
+                />
+            ))}
         </div>
     );
 };

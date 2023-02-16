@@ -1,6 +1,8 @@
+
+
 .collapse{
-    margin: 0 200px 30px 200px;
-    transition: all ease-in-out;
+    width: 100%;
+    margin-bottom: 30px;
 
     &_bar{
         width: 100%;
@@ -34,7 +36,7 @@
             font-size: 24px;
             font-weight: 500;
             color: $primary-color;
-            text-align: justify;
         }
     }
 }
+

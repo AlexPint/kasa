@@ -1,17 +1,22 @@
 import React from 'react';
 
-const Tag = () => {
+//en props on vient ajouter la props issue de FicheLogement, attention aux { }. Cette props a recu comme valeur le tableau de data
+const Tag = ({tags}) => {
+
+//On effectue un map sur cette props qui définit une fonction s'appelant "tag"
+
     return (
         <div className='tag'>
-            <div className='tag_box'>
-                <p className='tag_box-txt'>Cozy</p>
-            </div>
-            <div className='tag_box'>
-                <p className='tag_box-txt'>Cana</p>
-            </div>
-            <div className='tag_box'>
-                <p className='tag_box-txt'>Paris10</p>
-            </div>
+            {tags.map((tag, index) => (
+                <ul className='tag_box'>
+                    <li 
+                    className='tag_box-txt'
+                    key={index}
+                    >
+                        {tag}
+                    </li>
+                </ul>
+            ))}
         </div>
     );
 };
