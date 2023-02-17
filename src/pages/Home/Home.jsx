@@ -21,9 +21,6 @@ const Home = () => {
     <div>
       <Banner />
       <Card />
-      <div>
-
-      </div>
     </div>
   );
 };

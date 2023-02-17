@@ -2,4 +2,12 @@
     width: 100%;
     height: auto;
     text-align: right;
+    @media (max-width: 820px) {
+        text-align: left;
+        img{
+            width: 15px;
+            height: 15px;
+            margin: 10px 0;
+        }
+    }
 }

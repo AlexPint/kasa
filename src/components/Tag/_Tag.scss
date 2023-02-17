@@ -10,12 +10,15 @@
         width: auto;
         height: 25px;
         padding: 0 20px;
-        margin-right: 10px;
+        margin: 15px 10px 15px 0;
         background-color: $primary-color;
-        border-radius: 15px;
+        border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 820px) {
+            margin: 5px 10px 0 0;
+        }
         &-txt{
             font-family: "Monsterrat", sans-serif;
             font-weight: 500;

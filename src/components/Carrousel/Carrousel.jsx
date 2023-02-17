@@ -4,7 +4,7 @@ import leftArrow from"../../assets/leftArrow.svg"
 import rightArrow from"../../assets/rightArrow.svg"
 
 
-const Carrousel = ({pictures}) => {
+const Carrousel = ({pictures, index}) => {
     //On utilise le hook d'état pour suivre l'index de l'image acutellement affiché dans le carrousel.
     const [currentImage, setCurrentImage]=useState(0);
 
@@ -21,16 +21,17 @@ const Carrousel = ({pictures}) => {
             <div className="container">
                 <div className="display">
                     <img 
+                        key={index}
                         src={pictures[currentImage]} 
                         alt="carrousel kasa"
                         className="display_img"
                     />
                 </div>
                 <div className="container_arrow">
-                    <div onClick={handleLeftClick}>
+                    <div className="button" onClick={handleLeftClick}>
                         <img src={leftArrow} alt="fleche gauche du carrousel du site kasa" />
                     </div>
-                    <div type='button' onClick={handleRightClick}>
+                    <div className="button" onClick={handleRightClick}>
                         <img src={rightArrow} alt="fleche droite du carrousel du site kasa" />
                     </div>
                 </div>

@@ -2,6 +2,8 @@
     
     width: auto;
     height: 55px;
+
+
     
 
 
@@ -10,6 +12,14 @@
         width: 220px;
         height: 100%;
         @include flex-row-space-between;
+        @media (max-width: 820px) {
+            width: 120px;
+            height: 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
     }
 
     &_li{
@@ -19,6 +29,9 @@
         font-size: 24px;
         font-weight: 500;
         color: $primary-color;
+        @media (max-width: 820px) {
+            font-size: 14px;
+        }
 
         &:hover{
             text-decoration: underline;

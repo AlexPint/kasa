@@ -36,7 +36,7 @@ const FicheLogement = () => {
                 <Carrousel pictures={appart.pictures}/>
             </div>
             <div className="fiche_Container">
-                <div >
+                <div className="fiche_description" >
                     <Description title={appart.title} location={appart.location}/>
                     <Tag tags={appart.tags} />
                 </div>
@@ -47,7 +47,7 @@ const FicheLogement = () => {
                 <div className="fiche_collapse">
                     <Collapse title="Description" content={appart.description} />
                 </div>
-                <Collapse title="Equipements" content={appart.equipments} />
+                <Collapse className="collapse_equipments" title="Equipements" content={appart.equipments} />
             </div>
         </div>
     )

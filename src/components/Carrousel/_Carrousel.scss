@@ -8,6 +8,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @media (max-width: 820px) {
+        width: auto;
+        height: auto;
+        margin: 0px 30px 30px 30px;
+    }
 }
 
 .display{
@@ -37,9 +42,12 @@
     justify-content: space-between;
     img{
         filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 4px);
+        @media (max-width: 820px) {
+            width: 20px;
+            height: auto;
+        }
     }
 }
-
 .counter{
     width: 100%;
     height: auto;
@@ -51,4 +59,14 @@
     font-size: 30px;
     font-weight: 500;
     color: $text-color;
+    @media (max-width: 820px) {
+        font-size: 20px;
+    }
+}
+
+.button{
+    transition: transform 400ms;
+    &:active{
+        transform: scale(1.10);
+    }
 }

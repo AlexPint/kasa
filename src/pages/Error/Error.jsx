@@ -10,7 +10,6 @@ const Error = () => {
             <Link to="/">
                 <p className="error_link">Retourner sur la page d'accueil</p>
             </Link>
-
         </div>
     );
 };

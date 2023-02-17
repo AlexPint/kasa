@@ -1,12 +1,18 @@
 .fiche_Container{
     width: auto;
-    height: auto;
+    height: 100%;
     margin: 0 100px;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 15px;
+    @media (max-width: 820px) {
+        display: flex;
+        flex-direction: column;
+
+        margin: 0 30px;
+    }
 }
 
 .fiche_rate{
@@ -21,9 +27,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @media (max-width: 820px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .fiche_collapse{
     width: 90%;
     height: auto;
+    @media (max-width: 820px) {
+        width: 100%;
+    }
 }
+
+.fiche_description{
+    @media (max-width: 820px) {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+    }
+}
+
